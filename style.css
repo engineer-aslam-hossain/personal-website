@@ -8,18 +8,18 @@ body {
   font-size: 47px;
   font-weight: bolder;
 }
-.aboutme h1 {
+.half-width h1 {
   font-size: 30px;
   font-weight: 500;
   padding-top: 60px;
 }
-.aboutme {
+.half-width {
   width: 40%;
   float: left;
   margin-left: 5%;
   padding-left: 2%;
 }
-.aboutme img {
+.half-width img {
   width: 100%;
 }
 p {
@@ -32,7 +32,10 @@ p {
   color: white;
   padding: 20px 60px;
   border-radius: 5px;
-  background-image: linear-gradient(45deg, #ec4c7a, #ec4f90);
+  background-color: #e92578;
+}
+.link-button:hover {
+  background-color: #d1155f;
 }
 section {
   height: 500px;
@@ -40,13 +43,13 @@ section {
 .header {
   background-image: url("images/header-bg.png");
   padding: 80px;
-  background-size: contain;
+  background-size: cover;
 }
 
 .biography {
   background-image: url("images/biography-bg.png");
   padding: 80px;
-  background-size: contain;
+  background-size: cover;
 }
 
 .latestwork h1 {
@@ -57,7 +60,7 @@ section {
 }
 .latestwork {
   background-image: url("images/latest-work-bg.png");
-  background-repeat: round;
+  background-size: cover;
   padding: 80px;
 }
 .latestwork img {
@@ -91,7 +94,7 @@ footer p {
   color: black;
 }
 .contact-email {
-  background-image: linear-gradient(45deg, #ec4c7a, #ec4f90);
+  background-color: #e92578;
   color: white;
   padding: 40px 0;
   margin-top: 50px;
@@ -100,9 +103,16 @@ footer p {
   font-weight: 500;
 }
 
+.contact-email:hover {
+  background-color: #d1155f;
+}
 .email-me {
   font-size: 25px;
   padding: 10px;
+}
+a.email-me {
+  color: white;
+  text-decoration: none;
 }
 .footer {
   background-image: url("images/footer-bg.png");
@@ -111,12 +121,41 @@ footer p {
   background-position: center;
 }
 
-.footer img {
-}
-
 .copyright {
   text-align: center;
   height: 100%;
   font-size: 14px;
   opacity: 80%;
+}
+
+.mystrength {
+  text-align: center;
+  background-image: url("images/header-bg.png");
+  padding: 80px;
+  background-size: cover;
+  background-position: center;
+}
+.mystrength h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.technology {
+  display: inline-block;
+  padding-top: 20px;
+}
+span.tools {
+  background: #4b5769;
+  border-radius: 3px;
+  font-size: 20px;
+  margin: 5px;
+  padding: 15px 20px;
+  color: #e6f1ff;
+}
+section.mystrength {
+  height: 300px;
+}
+
+span.tools:hover {
+  background-color: #0a192f;
 }
